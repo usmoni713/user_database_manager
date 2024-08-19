@@ -269,8 +269,8 @@ async def main() -> None:
     print("Таблицы созданы.")
 
     print("\nЗаполняем данные в Таблицу.")
-    await db.add_new_user_in_database(user_id=11100, class_=9, age=16)
-    await db.add_new_user_in_database(user_id=21100, class_=7, age=14)
+    await db.add_new_user_in_database(user_id=100, class_=9, age=16)
+    await db.add_new_user_in_database(user_id=200, class_=7, age=14)
     await db.update_user_nationality(user_id=100, new_nationality="USA")
     await db.update_user_nationality(user_id=200, new_nationality="UK")
     await db.update_user_age(user_id=100, new_age=17)
